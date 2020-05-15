@@ -1,0 +1,45 @@
+@keyframes test {
+  0% {
+    font-size: 5px; }
+  5% {
+    font-size: 7px; }
+  10% {
+    font-size: 10px; }
+  15% {
+    font-size: 13px; }
+  20% {
+    font-size: 18px; }
+  25% {
+    font-size: 20px; }
+  30% {
+    font-size: 23px; }
+  35% {
+    font-size: 28px; }
+  40% {
+    font-size: 30px; }
+  45% {
+    font-size: 35px; }
+  50% {
+    font-size: 40px; }
+  55% {
+    font-size: 45px; }
+  60% {
+    font-size: 50px; }
+  65% {
+    font-size: 53px; }
+  70% {
+    font-size: 58px; }
+  75% {
+    font-size: 63px; }
+  80% {
+    font-size: 68px; }
+  85% {
+    font-size: 70px; }
+  90% {
+    font-size: 73px; }
+  95% {
+    font-size: 75px; }
+  100% {
+    font-size: 80px; } }
+
+/*# sourceMappingURL=animation_show.css.map */
