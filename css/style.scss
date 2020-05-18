@@ -38,6 +38,11 @@ $mobile_padding_lr:35px;
     color: #ffffff;
     font-size: 80px;
     text-align: center;
+
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 95px;
+      font-style: normal;
+    }
   }
 
   h2, h3, h4 {
@@ -48,7 +53,7 @@ $mobile_padding_lr:35px;
     font-size: 44px;
     color: #505d68;
     @media only screen and (max-width: $mobile_width) {
-      font-size: 70px;
+      font-size: 90px;
     }
   }
 
@@ -58,7 +63,6 @@ $mobile_padding_lr:35px;
     text-align: center;
     margin-bottom: 20px;
     font-size: 13px;
-
     @media only screen and (max-width: $mobile_width) {
       font-size: 28px;
     }
@@ -67,6 +71,10 @@ $mobile_padding_lr:35px;
   h5 {
     font-weight: 400;
     color: #505d68;
+    font-size: 30px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 60px;
+    }
   }
 
   p, a, span {
@@ -75,13 +83,32 @@ $mobile_padding_lr:35px;
 
   p {
     line-height: 32px;
+    font-size: 18px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 29px;
+      line-height: 50px;
+    }
   }
 
   a {
     text-decoration: none;
+    font-size: 14px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 27px;
+    }
+  }
+
+  span {
+    font-size: 13px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 28px;
+    }
   }
 
 }
+
+
+
 
 
 .main-container{
@@ -112,6 +139,7 @@ header{
     
     @media only screen and (max-width: $mobile_width) {
       background-color: #545a5b;
+      opacity: 0.9;
       padding: 17px 47px 18px 18px;
     }
   }
@@ -220,6 +248,7 @@ header{
 
   @media only screen and (max-width: $mobile_width) {
     width: 100%;
+    margin-bottom: 60px;
   }
 
   >.beards__item{
@@ -240,15 +269,27 @@ header{
   >h4{
     margin-bottom: 20px;
     text-align: left;
+    font-size: 13px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 29px;
+    }
   }
   >h5{
     margin-bottom: 40px;
     font-size: 21px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 40px;
+    }
   }
 
   >p{
     line-height: 22px;
     font-size: 13px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 29px;
+      line-height: 40px;
+      font-weight: bold;
+    }
   }
 
 }
@@ -260,12 +301,11 @@ header{
   text-align: center;
   padding-bottom: 160px;
 
-  h5{
+  h3{
     color: #505d68;
     margin-bottom: 55px;
-    font-size: 44px;
     @media only screen and (max-width: $mobile_width) {
-      font-size: 90px;
+      margin-bottom: 100px;
     }
   }
   
@@ -298,17 +338,15 @@ header{
     }
     
     >div{
-      padding: 42px 30px;
+      padding: 14px 30px;
     }
     
     span{
       display: inline-block;
-      font-size: 13px;
       margin-bottom: 30px;
     }
     
     h5{
-      font-size: 30px;
       margin-bottom: 40px;
     }
     
@@ -325,7 +363,6 @@ header{
   }
   
   >a{
-    font-size: 14px;
     padding: 24px 55px;
     border: solid 1px black;
     display: inline-block;
@@ -337,19 +374,16 @@ header{
 
 /* container-contacts */
 .container-contacts{
-  >div>h5{
+  >div>h3{
     text-align: center;
+    color: #505d68;
+    margin-bottom: 55px;
   }
    h4{
     
     margin-bottom: 20px;
   }
 
-   h5{
-    color: #505d68;
-    margin-bottom: 55px;
-    font-size: 44px;
-  }
 
 }
 
@@ -408,7 +442,7 @@ footer{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
+    
 
     @media only screen and (max-width: $mobile_width) {
       flex-direction: column;

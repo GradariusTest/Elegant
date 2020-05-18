@@ -210,6 +210,10 @@
     color: #ffffff;
     font-size: 80px;
     text-align: center; }
+    @media only screen and (max-width: 750px) {
+      * h1 {
+        font-size: 95px;
+        font-style: normal; } }
   * h2, * h3, * h4 {
     font-weight: bold; }
   * h3 {
@@ -217,7 +221,7 @@
     color: #505d68; }
     @media only screen and (max-width: 750px) {
       * h3 {
-        font-size: 70px; } }
+        font-size: 90px; } }
   * h4 {
     color: #d4af37;
     text-transform: uppercase;
@@ -229,13 +233,31 @@
         font-size: 28px; } }
   * h5 {
     font-weight: 400;
-    color: #505d68; }
+    color: #505d68;
+    font-size: 30px; }
+    @media only screen and (max-width: 750px) {
+      * h5 {
+        font-size: 60px; } }
   * p, * a, * span {
     font-weight: 300; }
   * p {
-    line-height: 32px; }
+    line-height: 32px;
+    font-size: 18px; }
+    @media only screen and (max-width: 750px) {
+      * p {
+        font-size: 29px;
+        line-height: 50px; } }
   * a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 14px; }
+    @media only screen and (max-width: 750px) {
+      * a {
+        font-size: 27px; } }
+  * span {
+    font-size: 13px; }
+    @media only screen and (max-width: 750px) {
+      * span {
+        font-size: 28px; } }
 
 .main-container {
   max-width: 760px;
@@ -260,6 +282,7 @@ header {
     @media only screen and (max-width: 750px) {
       header > div {
         background-color: #545a5b;
+        opacity: 0.9;
         padding: 17px 47px 18px 18px; } }
   header h1 {
     animation: test  1s  ease-in-out; }
@@ -327,7 +350,8 @@ header {
   width: 246px; }
   @media only screen and (max-width: 750px) {
     .beards__item {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 60px; } }
   .beards__item > .beards__item {
     text-align: left; }
   .beards__item > img {
@@ -339,26 +363,37 @@ header {
   text-align: left; }
   .beards__text > h4 {
     margin-bottom: 20px;
-    text-align: left; }
+    text-align: left;
+    font-size: 13px; }
+    @media only screen and (max-width: 750px) {
+      .beards__text > h4 {
+        font-size: 29px; } }
   .beards__text > h5 {
     margin-bottom: 40px;
     font-size: 21px; }
+    @media only screen and (max-width: 750px) {
+      .beards__text > h5 {
+        font-size: 40px; } }
   .beards__text > p {
     line-height: 22px;
     font-size: 13px; }
+    @media only screen and (max-width: 750px) {
+      .beards__text > p {
+        font-size: 29px;
+        line-height: 40px;
+        font-weight: bold; } }
 
 .news {
   max-width: 770px;
   margin: auto;
   text-align: center;
   padding-bottom: 160px; }
-  .news h5 {
+  .news h3 {
     color: #505d68;
-    margin-bottom: 55px;
-    font-size: 44px; }
+    margin-bottom: 55px; }
     @media only screen and (max-width: 750px) {
-      .news h5 {
-        font-size: 90px; } }
+      .news h3 {
+        margin-bottom: 100px; } }
   .news > div {
     display: flex;
     margin-bottom: 86px; }
@@ -380,13 +415,11 @@ header {
       .news .news__text {
         width: 100%; } }
     .news .news__text > div {
-      padding: 42px 30px; }
+      padding: 14px 30px; }
     .news .news__text span {
       display: inline-block;
-      font-size: 13px;
       margin-bottom: 30px; }
     .news .news__text h5 {
-      font-size: 30px;
       margin-bottom: 40px; }
     .news .news__text p {
       margin-bottom: 60px;
@@ -395,20 +428,17 @@ header {
       padding: 18px 46px;
       border: 1px solid black; }
   .news > a {
-    font-size: 14px;
     padding: 24px 55px;
     border: solid 1px black;
     display: inline-block; }
 
 /* container-contacts */
-.container-contacts > div > h5 {
-  text-align: center; }
+.container-contacts > div > h3 {
+  text-align: center;
+  color: #505d68;
+  margin-bottom: 55px; }
 .container-contacts h4 {
   margin-bottom: 20px; }
-.container-contacts h5 {
-  color: #505d68;
-  margin-bottom: 55px;
-  font-size: 44px; }
 
 .map {
   height: 295px; }
@@ -443,8 +473,7 @@ footer {
     max-width: 730px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    font-size: 16px; }
+    justify-content: space-between; }
     @media only screen and (max-width: 750px) {
       footer > div {
         flex-direction: column; } }
