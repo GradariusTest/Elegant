@@ -7,7 +7,6 @@
 
 $img_header: "../images/headerback.jpg";
 $img_header_mb: "../images/mobileback.jpg";
-$img_news: "../images/news-image_03.jpg";
 $font: 'Open Sans';
 
 $mobile_width: 750px;
@@ -26,6 +25,11 @@ $mobile_padding_lr:35px;
     font-family: $font, sans-serif;
     font-weight: 600;
     color: #021725;
+    font-size: 16px;
+    
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 22px;
+    }
   }
 
   h1 {
@@ -43,6 +47,9 @@ $mobile_padding_lr:35px;
   h3 {
     font-size: 44px;
     color: #505d68;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 70px;
+    }
   }
 
   h4 {
@@ -51,6 +58,10 @@ $mobile_padding_lr:35px;
     text-align: center;
     margin-bottom: 20px;
     font-size: 13px;
+
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 28px;
+    }
   }
 
   h5 {
@@ -85,7 +96,7 @@ header{
   background: green;
   background: url($img_header) no-repeat;
   background-size: 100% auto;
-  padding: 17px 47px 335px;
+  padding: 0 0 335px;
 
 
   @media only screen and (max-width: $mobile_width) {
@@ -97,6 +108,12 @@ header{
 
   >div{
     margin-bottom: 260px;
+    padding: 17px 47px 0;
+    
+    @media only screen and (max-width: $mobile_width) {
+      background-color: #545a5b;
+      padding: 17px 47px 18px 18px;
+    }
   }
   
   h1{
@@ -149,6 +166,9 @@ header{
    img{
     border: 3px solid white;
     width: 25%;
+     @media only screen and (max-width: $mobile_width) {
+       width: 100%;
+     }
   }
 }
 
@@ -166,6 +186,7 @@ header{
   margin: auto;
   text-align: center;
   padding-top: 160px;
+
 }
 
 .we__header{
@@ -178,10 +199,6 @@ header{
   >h3{
     margin-bottom: 60px;
   }
-  
-  >p{
-    font-size: 18px;
-  }
 }
 
 
@@ -190,13 +207,20 @@ header{
   justify-content: space-between;
   flex-wrap: nowrap;
   margin-bottom: 165px;
-  
+
+  @media only screen and (max-width: $mobile_width) {
+    flex-direction: column;
+  }
 }
 
 .beards__item{
   background-color: #f9f9f9;
   padding-bottom: 48px;
   width: 246px;
+
+  @media only screen and (max-width: $mobile_width) {
+    width: 100%;
+  }
 
   >.beards__item{
     text-align: left;
@@ -205,6 +229,7 @@ header{
 
   >img{
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 
@@ -239,6 +264,9 @@ header{
     color: #505d68;
     margin-bottom: 55px;
     font-size: 44px;
+    @media only screen and (max-width: $mobile_width) {
+      font-size: 90px;
+    }
   }
   
   >div{
@@ -252,12 +280,22 @@ header{
   
   .news__image{
     width: 50%;
-    background: url($img_news);
+    @media only screen and (max-width: $mobile_width) {
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
   }
   
   .news__text{
     width: 50%;
     text-align: left;
+    background-color: #f9f9f9;
+    
+    @media only screen and (max-width: $mobile_width) {
+      width: 100%;
+    }
     
     >div{
       padding: 42px 30px;
@@ -275,7 +313,6 @@ header{
     }
     
     p{
-      font-size: 16px;
       margin-bottom: 60px;
       display: inline-block;
     }
@@ -346,10 +383,7 @@ header{
 .contacts__item{
   max-width: 240px;
   margin: auto;
-
-   p{
-    font-size: 19px;
-  }
+  
    p:nth-of-type(1){
     margin-bottom: 20px;
   }
